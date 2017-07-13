@@ -1,7 +1,7 @@
 
 var arregloPlanetas = [];
 
-
+var	contador = 1;
 function getJSON(url){
 	return new Promise (function(resolve, error){
 		
@@ -28,6 +28,7 @@ getJSON ("data/earth-like-results.json")
 			// console.log(elemento);
 			elemento.then(function(planeta){
 				imprimir(planeta);
+				contador++;
 				console.log(planeta);
 			})
 		})
@@ -57,7 +58,7 @@ var creaTarjeta = function(nombre,descubrimiento,telescopio){
 	  col_s12.setAttribute("class","col s12 m6");
 	  card.setAttribute("class","card");
 	  card_image.setAttribute("class","card-image");
-	  card__image_imagen.setAttribute("src","static/img/planeta1.jpg");
+	  card__image_imagen.setAttribute("src","static/img/planeta"+contador+".jpg");
 	  card__image_title.setAttribute("class","card-title");
 	  card_content.setAttribute("class","card-content");
 
