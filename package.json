@@ -1,0 +1,15 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Practicando nodejs, apis, servidores y promises",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Erika flores",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
